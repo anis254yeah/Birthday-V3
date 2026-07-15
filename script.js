@@ -161,3 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+    const candle = document.querySelector(".candle");
+
+      if (candle) {
+      candle.addEventListener("click", function () {
+         candle.classList.add("blown");
+    });
+}
