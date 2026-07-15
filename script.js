@@ -160,13 +160,28 @@ document.addEventListener('DOMContentLoaded', () => {
             firework.addEventListener('animationend', () => firework.remove());
         }
     }
-});
 
           const candle = document.querySelector(".candle");
 const flame = document.getElementById("candleFlame");
+const smoke = document.querySelector(".smoke");
 
-if (candle && flame) {
+if (candle && flame && smoke) {
+
     candle.addEventListener("click", function () {
-        flame.classList.add("blown");
+
+        if (flame.classList.contains("blown")) return;
+
+        candle.style.transform = "translateX(-50%) rotate(-8deg)";
+
+        setTimeout(() => {
+
+            flame.classList.add("blown");
+            smoke.classList.add("show");
+
+            candle.style.transform = "translateX(-50%)";
+
+        },150);
+
     });
-}
+
+}      
