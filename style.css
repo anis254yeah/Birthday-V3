@@ -573,11 +573,3 @@ body {
     .cake { transform: scale(0.7); }
     .envelope { transform: scale(0.7); } /* Even smaller envelope */
 }
-
-.const candle = document.querySelector(".candle");
-
-if (candle) {
-    candle.addEventListener("click", function () {
-        candle.classList.add("blown");
-    });
-}
