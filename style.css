@@ -405,11 +405,13 @@ body {
 }
 
 /* Candle blow-out effect */
-.candle:hover .flame {
+.flame.blown {
     opacity: 0;
-    transform: translateX(-50%) scale(0);
+    transform: scale(0);
     box-shadow: none;
+    animation: none;
     transition: all 0.4s ease;
+}
 }
 
 @keyframes flicker {
