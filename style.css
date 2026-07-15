@@ -407,8 +407,9 @@ body {
 /* Candle blow-out effect */
 .candle:hover .flame {
     opacity: 0;
-    transform: scale(0.2) translateY(5px);
+    transform: translateX(-50%) scale(0);
     box-shadow: none;
+    transition: all 0.4s ease;
 }
 
 @keyframes flicker {
