@@ -162,10 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-    const candle = document.querySelector(".candle");
+          const candle = document.querySelector(".candle");
+const flame = document.getElementById("candleFlame");
 
-      if (candle) {
-      candle.addEventListener("click", function () {
-         candle.classList.add("blown");
+if (candle && flame) {
+    candle.addEventListener("click", function () {
+        flame.classList.add("blown");
     });
 }
